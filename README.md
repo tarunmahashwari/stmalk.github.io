@@ -1,2 +1,2 @@
 # myrepository
-<b2>Here be my projects!</b2>
+<b>Here be my projects!</b>
