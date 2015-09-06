@@ -1,5 +1,11 @@
 body{
 width:100%;
-background:rgb(255,255,200);
+background-color:rgb(128,128,128);
+}
+
+.mainframe {
+  position:relative;
+  width:60%;
+  background-color:rgb(255,255,255);
 }
 
