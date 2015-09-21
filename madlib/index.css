@@ -179,7 +179,7 @@ padding:0;
 .cloudtext
 
 {
-	font-family: "Courier New", Courier, monospace;
+	font-family: Verdana, Geneva, sans-serif;
 	background-color: transparent;
 	color:black;
 	text-transform: uppercase;
@@ -351,7 +351,7 @@ border-radius: 4px;
 
 .textinside{
 	z-index:11;
-	font-family: "Courier New", Courier, monospace;
+	font-family: Verdana, Geneva, sans-serif;
 	text-transform: uppercase;
 	font-weight: 900;
 	position:absolute;	
@@ -371,7 +371,7 @@ cursor: pointer; cursor: hand;
 	background-image:url(images/close.svg);
 	background-repeat: no-repeat;
 	z-index:11;
-	font-family: "Courier New", Courier, monospace;
+	font-family: Verdana, Geneva, sans-serif;
 	text-transform: uppercase;
 	font-weight: 900;
 	position:absolute;	
