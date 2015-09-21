@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>MadLib</title>
+<link rel="stylesheet" type="text/css" href="index.css" />
+
+</head>
+
+<body>
+
+
+
+<div class="topcontainer"><div class="topcontainersign"></div>	</div>	
+
+<div class="mainframe">
+
+	<div class="littlecloud"><div class="cloudtextfield"><div class="cloudtextblinker"></div><div class="cloudtext">Please enter three adjectives below:</div></div>
+			<ul id="listings">
+ 				 	<li><input type="text" id="adjectives1" value="Adjective" onchange="update(this)"></li>
+  					<li><input type="text" id="adjectives2" value="Adjective" onchange="update(this)"></li>
+  					<li><input type="text" id="adjectives3" value="Adjective" onchange="update(this)"></li>
+			</ul>
+
+	</div>	
+
+		<div class="spacing"></div>	
+	<div class="littlecloud rightfloating" style="animation-delay: 1s;"><div class="cloudtextfield" style="animation-delay: 1.5s;"><div class="cloudtextblinker"></div><div class="cloudtext">Please enter three nouns below:</div></div>
+			
+			<ul id="listings">
+ 				 	<li><input type="text" id="nouns1" value="Noun" onchange="update(this)"></li>
+  					<li><input type="text" id="nouns2" value="Noun" onchange="update(this)"></li>
+  					<li><input type="text" id="nouns3" value="Noun" onchange="update(this)"></li>
+			</ul>
+
+	</div>
+
+		<div class="spacing"></div>	
+	<div class="littlecloud" style="animation-delay: 1.5s;"><div class="cloudtextfield" style="animation-delay: 2s;"><div class="cloudtextblinker"></div><div class="cloudtext">Please enter three verbs below:</div></div>
+			<ul id="listings">
+ 				 	<li><input type="text" id="verbs1" value="Verb" onchange="update(this)">	</li>
+  					<li><input type="text" id="verbs2" value="Verb" onchange="update(this)">	</li>
+  					<li><input type="text" id="verbs3" value="Verb" onchange="update(this)">	</li>
+			</ul>
+
+
+	</div>	
+
+	<div class="spacing"></div>	
+	<div class="spacing"></div>	
+	<div class="spacing"><div class="buttonwrap"><button type="button" id="letsgo" onclick="letitGo()">Process</button></div></div>
+
+<script>
+function update(el){
+  var value = el.value;
+  document.getElementById(el.id.replace('adjectives', 'adjective')).innerHTML = value;
+  document.getElementById(el.id.replace('nouns', 'noun')).innerHTML = value;
+  document.getElementById(el.id.replace('verbs', 'verb')).innerHTML = value;
+  
+}
+
+
+var noun1 = document.getElementById("nouns1").value;
+var noun2 = document.getElementById("nouns2").value;
+var noun3 = document.getElementById("nouns3").value;
+var verb1 = document.getElementById("verbs1").value;
+var verb2 = document.getElementById("verbs2").value;
+var verb3 = document.getElementById("verbs3").value;
+var adjective1 = document.getElementById("adjectives1").value;
+var adjective2 = document.getElementById("adjectives2").value;
+var adjective3 = document.getElementById("adjectives3").value;
+
+function letitGo()
+{
+document.getElementById("textualdiv").style.opacity="1";
+document.getElementById("textualdiv").style.pointerEvents="auto";
+document.getElementById("noun1").style.backgroundColor="grey";
+document.getElementById("noun2").style.backgroundColor="grey";
+document.getElementById("noun3").style.backgroundColor="grey";
+
+document.getElementById("verb1").style.backgroundColor="pink";
+document.getElementById("verb2").style.backgroundColor="pink";
+document.getElementById("verb3").style.backgroundColor="pink";
+
+document.getElementById("adjective1").style.backgroundColor="lightgreen";
+document.getElementById("adjective2").style.backgroundColor="lightgreen";
+document.getElementById("adjective3").style.backgroundColor="lightgreen";
+}
+
+function letitClose()
+{
+document.getElementById("textualdiv").style.opacity="0";
+document.getElementById("textualdiv").style.pointerEvents="none";
+}
+</script>
+			
+
+<div id="textualdiv"><div class="textinside"> The <span id="noun1">evidence</span> was a rhythmic flickering from the galaxy’s nucleus, a <span id="noun2">quasar</span> known as PG 1302-102, which Matthew Graham and his colleagues <span id="verb1">interpreted</span> as the <span id="adjective1">fatal</span> mating dance of a pair of black holes with a total mass of more than a billion suns. Their merger, the astronomers calculated, could <span id="verb2">release</span> as much energy as 100 million supernova explosions, mostly in the form of <span id="adjective2">violent</span> <span id="noun3">ripples</span> in space-time known as  <span id="adjective3">gravitational</span> waves that would <span id="verb3">blow</span> the stars out of that hapless galaxy like leaves off a roof.</div> <button type="button" id="closingcross" onclick="letitClose()"></button></div>
+
+</div>
+
+<script>
+document.getElementById('noun1').innerHTML = noun1;
+document.getElementById('noun2').innerHTML = noun2;
+document.getElementById('noun3').innerHTML = noun3;
+document.getElementById('verb1').innerHTML = verb1;
+document.getElementById('verb2').innerHTML = verb2;
+document.getElementById('verb3').innerHTML = verb3;
+document.getElementById('adjective1').innerHTML = adjective1;
+document.getElementById('adjective2').innerHTML = adjective2;
+document.getElementById('adjective3').innerHTML = adjective3;
+
+</script>
+
+
+</body>
+
+
+
+</html>
