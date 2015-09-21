@@ -6,6 +6,39 @@ margin: 0;
 height: 100%;
 }
 
+
+a:link {
+	font-size:100%;
+	color:white;
+	font-style:;
+	font-family: "Arial Black", Gadget, sans-serif;
+	text-decoration: none;
+}
+
+a:visited {
+	font-size:100%;
+	color:white;
+	font-style:;
+	font-family: "Arial Black", Gadget, sans-serif;
+    	text-decoration: none;
+}
+
+a:hover {
+	font-size:100%;
+	color:white;
+	font-style:;
+	font-family: "Arial Black", Gadget, sans-serif;
+	text-decoration: none;
+}
+
+a:active {
+	font-size:100%;
+	color:white;
+	font-style:;
+	font-family: "Arial Black", Gadget, sans-serif;
+  	text-decoration: none;
+}
+
 .mainframe {
 
 min-width:720px;
