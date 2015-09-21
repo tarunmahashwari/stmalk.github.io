@@ -52,6 +52,7 @@
 	<div class="spacing"><div class="buttonwrap"><button type="button" id="letsgo" onclick="letitGo()">Process</button></div></div>
 
 <script>
+
 function update(el){
   var value = el.value;
   document.getElementById(el.id.replace('adjectives', 'adjective')).innerHTML = value;
@@ -73,8 +74,28 @@ var adjective3 = document.getElementById("adjectives3").value;
 
 function letitGo()
 {
+
+var noun1 = document.getElementById("nouns1").value;
+var noun2 = document.getElementById("nouns2").value;
+var noun3 = document.getElementById("nouns3").value;
+var verb1 = document.getElementById("verbs1").value;
+var verb2 = document.getElementById("verbs2").value;
+var verb3 = document.getElementById("verbs3").value;
+var adjective1 = document.getElementById("adjectives1").value;
+var adjective2 = document.getElementById("adjectives2").value;
+var adjective3 = document.getElementById("adjectives3").value;
+
+    if (noun1=="Noun" || noun2=="Noun",noun3=="Noun" || verb1=="Verb",verb2=="Verb" || verb3=="Verb",adjective1=="Adjective" || adjective2=="Adjective" || adjective3 =="Adjective")
+      {
+      alert("Please Fill All Required Field");
+           }
+
+           else {
 document.getElementById("textualdiv").style.opacity="1";
 document.getElementById("textualdiv").style.pointerEvents="auto";
+           }
+
+
 document.getElementById("noun1").style.backgroundColor="grey";
 document.getElementById("noun2").style.backgroundColor="grey";
 document.getElementById("noun3").style.backgroundColor="grey";
