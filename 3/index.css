@@ -54,7 +54,7 @@ cursor:hand;
 
 
 #button1 {
-		z-index:6;
+        z-index:6;
 background: url(illo/button.svg)no-repeat;
 background-size:100%;
 display: block;
@@ -66,8 +66,8 @@ height:inherit;
 }
 
 #bubble {
-	opacity:0;
-	z-index:2;
+    opacity:0;
+    z-index:2;
 background: url(illo/bubble.svg) center center no-repeat;
 background-size:100%;
 display: block;
@@ -81,8 +81,8 @@ height:505px
 
 
 .bubbleStill {
-	opacity:0;
-	z-index:2;
+    opacity:0;
+    z-index:2;
 background: url(illo/bubble.svg) center center no-repeat;
 background-size:100%;
 display: block;
@@ -95,8 +95,8 @@ height:505px
 }
 
 .bubbleExploading {
-	opacity:0;
-	z-index:123;
+    opacity:0;
+    z-index:123;
 background: url(illo/bubble.svg) center center no-repeat;
 background-size:100%;
 display: block;
@@ -111,7 +111,7 @@ transform-origin: bottom center;
 -webkit-transform-origin: bottom center;
 -moz-transform-origin: bottom center;
 
-	animation-name: xploading;
+    animation-name: xploading;
     animation-duration: 20s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -204,8 +204,8 @@ height:256px
 
 #question
 {
-	padding-top:17px;
-	word-wrap: break-word;
+    padding-top:17px;
+    word-wrap: break-word;
    width: 400px;
 font-size:16pt;
 text-transform: uppercase;
@@ -216,9 +216,9 @@ max-width: 500px;
 
 #answer
 {
-	word-wrap: break-word;
+    word-wrap: break-word;
    width: 400px;
-	font-style:;
+    font-style:;
 text-transform: uppercase;
 color:brown;
 font-size:16pt;
@@ -233,8 +233,8 @@ max-width: 500px;
 }
 
 .smokestill {
-	opacity:0;
-	z-index:12;
+    opacity:0;
+    z-index:12;
 background: transparent;
 background-size:100%;
 display: block;
@@ -248,8 +248,8 @@ height:206px;
 
 
 .smoke {
-	opacity:1;
-	z-index:12;
+    opacity:1;
+    z-index:12;
 background: url(illo/smoke.svg) center center no-repeat;
 background-size:100%;
 display: block;
@@ -264,7 +264,7 @@ transform-origin: bottom center;
 -webkit-transform-origin: bottom center;
 -moz-transform-origin: bottom center;
 
-	animation-name: smoke;
+    animation-name: smoke;
     animation-duration: 20s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;   
@@ -292,17 +292,17 @@ transform-origin: bottom center;
 }
 
 @-webkit-keyframes smoke { 
-	0% { opacity:0;  transform: scale(0.4,0.4);} 
-	 3% { opacity:1;  transform: scale(1,1);} 
-	 100% { opacity:0;  transform: scale(2.5,1.5);} 
+    0% { opacity:0;  transform: scale(0.4,0.4);} 
+     3% { opacity:1;  transform: scale(1,1);} 
+     100% { opacity:0;  transform: scale(2.5,1.5);} 
 
 }
 @keyframes smoke { 
-	0% { opacity:0; transform: scale(0.4,0.4); }
-	 3% { opacity:1;  transform: scale(1,1); } 
-	 100% { opacity:0;  transform: scale(2.5,1.5); } 
+    0% { opacity:0; transform: scale(0.4,0.4); }
+     3% { opacity:1;  transform: scale(1,1); } 
+     100% { opacity:0;  transform: scale(2.5,1.5); } 
 
-	 }
+     }
 
 
 #rocketdear{
@@ -311,8 +311,8 @@ transform-origin: bottom center;
 
 
 .rocketstill {
-	opacity:0;
-	z-index:13;
+    opacity:0;
+    z-index:13;
 background: transparent;
 
 display: block;
@@ -326,8 +326,8 @@ transform:rotate(15deg);
 }
 
 .rocket {
-	opacity:1;
-	z-index:13;
+    opacity:1;
+    z-index:13;
 background: url(illo/rocket.svg) center center no-repeat;
 
 display: block;
@@ -343,7 +343,7 @@ transform-origin: bottom center;
 -webkit-transform-origin: bottom center;
 -moz-transform-origin: bottom center;
 
-	animation-name: rocket;
+    animation-name: rocket;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
 
@@ -364,18 +364,18 @@ transform-origin: bottom center;
 }
 
 @-moz-keyframes rocket {
- 100% { -moz-transform: translate(120px, -600px); } 
+ 0% { -moz-transform: translate(120px, -600px); } 
 
 }
 
 @-webkit-keyframes rocket { 
-	100% { -webkit-transform: translate(120px, -600px); } 
+     0% { -webkit-transform: translate(120px, -600px); } 
 
 }
 @keyframes rocket { 
-	100% { transform:translate(120px, -600px); }
+     0% { transform:translate(120px, -600px); }
 
-	 }
+     }
 
 
 #launchsmokedear {
@@ -383,8 +383,8 @@ transform-origin: bottom center;
 }
 
 .launchsmokestill {
-	opacity:0;
-	z-index:15;
+    opacity:0;
+    z-index:15;
 background: transparent;
 background-size:100%;
 display: block;
@@ -397,8 +397,8 @@ height:167px;
 }
 
 .launchsmoke {
-	opacity:1;
-	z-index:15;
+    opacity:1;
+    z-index:15;
 background: url(illo/launchsmoke.svg) center center no-repeat;
 background-size:100%;
 display: block;
@@ -413,7 +413,7 @@ transform-origin: bottom center;
 -webkit-transform-origin: bottom center;
 -moz-transform-origin: bottom center;
 
-	animation-name: launchsmoke;
+    animation-name: launchsmoke;
     animation-duration: 20s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;   
@@ -441,17 +441,17 @@ transform-origin: bottom center;
 }
 
 @-webkit-keyframes launchsmoke { 
-	0% { opacity:0;  transform: scale(0.4,0.4);} 
-	 2% { opacity:1;  transform: scale(1,1);} 
-	 100% { opacity:0;  transform: scale(1.5,1.5);} 
+    0% { opacity:0;  transform: scale(0.4,0.4);} 
+     2% { opacity:1;  transform: scale(1,1);} 
+     100% { opacity:0;  transform: scale(1.5,1.5);} 
 
 }
 @keyframes launchsmoke { 
-	0% { opacity:0; transform: scale(0.4,0.4); }
-	 2% { opacity:1;  transform: scale(1,1); } 
-	 100% { opacity:0;  transform: scale(1.5,1.5); } 
+    0% { opacity:0; transform: scale(0.4,0.4); }
+     2% { opacity:1;  transform: scale(1,1); } 
+     100% { opacity:0;  transform: scale(1.5,1.5); } 
 
-	 }
+     }
 
 
 .rainframe3 {
@@ -475,45 +475,45 @@ pointer-events:none;
 
 .drop {
 
-	z-index:20;
+    z-index:20;
   background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(110,128,150,1) ), to(rgba(255,255,255,0.6))  );
   background: -moz-linear-gradient(top, rgba(110,128,150,1) 0%, rgba(255,255,255,.6) 100%);
-	width:1px;
-	height:39px;
-	position: absolute;
-	bottom:200px;
-	-webkit-animation: fall .4s linear infinite;
+    width:1px;
+    height:39px;
+    position: absolute;
+    bottom:200px;
+    -webkit-animation: fall .4s linear infinite;
   -moz-animation: fall .4s linear infinite;
   
 }
 
 /* animate the drops*/
 @-webkit-keyframes fall {
-	to {margin-top:600px;}
+    to {margin-top:600px;}
 }
 @-moz-keyframes fall {
-	to {margin-top:600px;}
+    to {margin-top:600px;}
 }
 
 .dropNone {
 
-	z-index:20;
+    z-index:20;
   background:transparent;
-	width:1px;
-	height:39px;
-	position: absolute;
-	bottom:200px;
-	-webkit-animation: fall .4s linear infinite;
+    width:1px;
+    height:39px;
+    position: absolute;
+    bottom:200px;
+    -webkit-animation: fall .4s linear infinite;
   -moz-animation: fall .4s linear infinite;
   
 }
 
 /* animate the drops*/
 @-webkit-keyframes fall {
-	to {margin-top:600px;}
+    to {margin-top:600px;}
 }
 @-moz-keyframes fall {
-	to {margin-top:600px;}
+    to {margin-top:600px;}
 }
 
 #bottommask {
