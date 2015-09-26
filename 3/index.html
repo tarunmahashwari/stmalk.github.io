@@ -25,7 +25,7 @@
 
  <div id="eight-ball">        
         <button id="button1" onclick="javascript:shake();"></button>
- <div>
+ </div>
 
 </div>
 <div id="bottommask"></div>
@@ -98,7 +98,8 @@
                 document.getElementById("launchsmokedear").className = "launchsmokestill";
                 document.getElementById("rocketdear").className = "rocketstill";
 
-return;
+nbDrop = 0;
+        createRain();
 
 }
 
@@ -119,7 +120,8 @@ else if (chosenAnswer == 1){
                 document.getElementById("launchsmokedear").className = "launchsmokestill";
                 document.getElementById("rocketdear").className = "rocketstill";
 
-return;
+nbDrop = 0;
+        createRain();
 }
 
 else if (chosenAnswer == 2){
@@ -138,7 +140,8 @@ else if (chosenAnswer == 2){
                 document.getElementById("launchsmokedear").className = "launchsmokestill";
                 document.getElementById("rocketdear").className = "rocketstill";
 
-return;
+ nbDrop = 0;
+        createRain();
 }
 
 else if (chosenAnswer == 3){
@@ -158,7 +161,8 @@ else if (chosenAnswer == 3){
                 document.getElementById("launchsmokedear").className = "launchsmokestill";
                 document.getElementById("rocketdear").className = "rocketstill";
 
-return;
+   nbDrop = 0;
+        createRain();
 
 }
 
@@ -182,7 +186,8 @@ else if (chosenAnswer == 4){
                 document.getElementById("bubble").className = "bubbleStill";
                 document.getElementById("bubble").style.opacity="0";
 
-return;
+  nbDrop = 0;
+        createRain();
 }
 
 
@@ -207,7 +212,7 @@ else {
                 document.getElementById("bubble").className = "bubbleStill";
                 document.getElementById("bubble").style.opacity="0";
 nbDrop = 120;
-
+  createRain();
 
 }
 

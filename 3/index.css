@@ -364,16 +364,16 @@ transform-origin: bottom center;
 }
 
 @-moz-keyframes rocket {
- 0% { -moz-transform: translate(120px, -600px); } 
+ 100% { -moz-transform: translate(120px, -600px); } 
 
 }
 
 @-webkit-keyframes rocket { 
-     0% { -webkit-transform: translate(120px, -600px); } 
+     1000% { -webkit-transform: translate(120px, -600px); } 
 
 }
 @keyframes rocket { 
-     0% { transform:translate(120px, -600px); }
+     100% { transform:translate(120px, -600px); }
 
      }
 
