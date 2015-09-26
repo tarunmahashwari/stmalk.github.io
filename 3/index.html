@@ -229,7 +229,7 @@ function randRange( minNum, maxNum) {
 
 // function to generate drops
 function createRain() {
-    for( i=0;i<=nbDrop;i++) {
+    for( i=1;i<nbDrop;i++) {
 	var dropLeft = randRange(0,1280);
 	var dropTop = randRange(-500,590);
 
