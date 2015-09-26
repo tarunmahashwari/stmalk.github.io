@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Magic 8 Ball</title>
+<link rel="stylesheet" type="text/css" href="index.css" />
+<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+</head>
+
+<body>
+<div id="topmask"></div>
+<div id="mainframe">
+	<div id="mainframe2">
+	<section class="rain"></section>	
+	<div id="rocketdear"></div><div id="smokedear"></div><div id="launchsmokedear"></div>
+	</div>
+
+
+	<div id="bubble"></div>
+	<div id="bubbleHugecat"></div><div id="bubbleHugecatrays"></div>
+	<div class="sign">
+<p id="question"></p>
+<p id="answer"></p>
+</div>
+
+ <div id="eight-ball">        
+        <button id="button1" onclick="javascript:shake();"></button>
+ <div>
+
+</div>
+<div id="bottommask"></div>
+
+
+<script>
+
+
+
+
+       function shake(){
+
+       	var answersArrayed = ["Yes. So nothing happens", "No. Enjoy your consequences", "Ok, but that's something different", "My answer won't help you, deal with it!", "Your questions don't matter anymore", "Your questions make it rain again"];
+
+        // The question we asked
+        var question = prompt("Ask you question...");
+        var questionText = document.getElementById('question');
+        questionText.innerHTML = question;
+
+        // Number of possible answers  
+        var numberOfAnswers = answersArrayed.length;
+
+        // Answers the 8 Ball can return
+
+
+     // Answer returned by our 8 Ball
+        var chosenAnswer = getAnswerNumber(numberOfAnswers);        
+        displayAnswer(chosenAnswer);
+        
+
+
+
+                // Returns a number based on the number of sides
+        function getAnswerNumber(answerCount){
+            var number = getRandomInt(0,numberOfAnswers);
+            return number;
+        }
+
+        // Returns a random integer between two numbers
+        function getRandomInt(min,max){
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+
+
+                // Show our answer in the document 
+        function displayAnswer(answer) {
+
+
+
+}
+
+
+            // Access the DOM element we want to to change
+            var fortuneText = document.getElementById('answer');
+ 
+    if (chosenAnswer == 0){
+	     		document.getElementById("bubble").className = "bubbleStill";
+                fortuneText.innerHTML = answersArrayed[0];
+
+                document.getElementById("smokedear").style.webkitAnimation = 'none';
+                document.getElementById("launchsmokedear").style.webkitAnimation = 'none';
+                document.getElementById("rocketdear").style.webkitAnimation = 'none';
+				document.getElementById("bubble").style.webkitAnimation = 'none';
+
+                document.getElementById("bubble").style.opacity="0";
+                 document.getElementById("bubbleHugecat").style.opacity="0";
+                document.getElementById("bubbleHugecatrays").style.opacity="0";
+                document.getElementById("mainframe").style.backgroundImage = "url('illo/desert23.svg')";
+                document.getElementById("smokedear").className = "smokestill";
+                document.getElementById("launchsmokedear").className = "launchsmokestill";
+                document.getElementById("rocketdear").className = "rocketstill";
+nbDrop = 0;
+
+
+}
+
+else if (chosenAnswer == 1){
+                fortuneText.innerHTML = answersArrayed[1];
+
+                document.getElementById("smokedear").style.webkitAnimation = 'none';
+                document.getElementById("launchsmokedear").style.webkitAnimation = 'none';
+                document.getElementById("rocketdear").style.webkitAnimation = 'none';
+
+                document.getElementById("bubble").className = "bubbleExploading";
+                document.getElementById("bubble").style.webkitAnimation = '';
+                document.getElementById("bubble").style.opacity="1";
+                 document.getElementById("bubbleHugecat").style.opacity="0";
+                document.getElementById("bubbleHugecatrays").style.opacity="0";
+                document.getElementById("mainframe").style.backgroundImage = "url('illo/desert23.svg')";
+           		document.getElementById("smokedear").className = "smokestill";
+                document.getElementById("launchsmokedear").className = "launchsmokestill";
+                document.getElementById("rocketdear").className = "rocketstill";
+nbDrop = 0;
+
+}
+
+else if (chosenAnswer == 2){
+                fortuneText.innerHTML = answersArrayed[2];
+
+                document.getElementById("smokedear").style.webkitAnimation = 'none';
+                document.getElementById("launchsmokedear").style.webkitAnimation = 'none';
+                document.getElementById("rocketdear").style.webkitAnimation = 'none';
+				document.getElementById("bubble").style.webkitAnimation = 'none';
+                document.getElementById("bubbleHugecatrays").style.opacity="1";
+                document.getElementById("bubbleHugecat").style.opacity="1";
+                document.getElementById("mainframe").style.backgroundImage = "url('illo/desert23.svg')";
+                document.getElementById("bubble").className = "bubbleStill";
+                document.getElementById("bubble").style.opacity="0";
+                document.getElementById("smokedear").className = "smokestill";
+                document.getElementById("launchsmokedear").className = "launchsmokestill";
+                document.getElementById("rocketdear").className = "rocketstill";
+nbDrop = 0;
+
+}
+
+else if (chosenAnswer == 3){
+
+
+				document.getElementById("smokedear").style.webkitAnimation = 'none';
+                document.getElementById("launchsmokedear").style.webkitAnimation = 'none';
+                document.getElementById("rocketdear").style.webkitAnimation = 'none';
+				document.getElementById("bubble").style.webkitAnimation = 'none';
+                fortuneText.innerHTML = answersArrayed[3];
+				document.getElementById("bubbleHugecat").style.opacity="0";
+                document.getElementById("bubbleHugecatrays").style.opacity="0";
+                document.getElementById("bubble").className = "bubbleStill";
+                document.getElementById("bubble").style.opacity="0";
+                document.getElementById("mainframe").style.backgroundImage = "url('illo/desert_night.svg')";
+                document.getElementById("smokedear").className = "smokestill";
+                document.getElementById("launchsmokedear").className = "launchsmokestill";
+                document.getElementById("rocketdear").className = "rocketstill";
+nbDrop = 0;
+
+}
+
+else if (chosenAnswer == 4){
+
+                fortuneText.innerHTML = answersArrayed[4];
+                document.getElementById("smokedear").style.opacity="1";
+                document.getElementById("launchsmokedear").style.opacity="1";
+                document.getElementById("rocketdear").style.opacity="1";
+				document.getElementById("smokedear").className = "smoke";
+                document.getElementById("launchsmokedear").className = "launchsmoke";
+                document.getElementById("rocketdear").className = "rocket";
+				document.getElementById("smokedear").style.webkitAnimation = '';
+                document.getElementById("launchsmokedear").style.webkitAnimation = '';
+                document.getElementById("rocketdear").style.webkitAnimation = '';
+				document.getElementById("bubble").style.webkitAnimation = 'none';
+
+				document.getElementById("mainframe").style.backgroundImage = "url('illo/desert23.svg')";
+               	document.getElementById("bubbleHugecat").style.opacity="0";
+                document.getElementById("bubbleHugecatrays").style.opacity="0";
+                document.getElementById("bubble").className = "bubbleStill";
+                document.getElementById("bubble").style.opacity="0";
+nbDrop = 0;
+
+}
+
+
+
+else {
+
+                fortuneText.innerHTML = answersArrayed[5];
+
+               	document.getElementById("smokedear").style.webkitAnimation = 'none';
+                document.getElementById("launchsmokedear").style.webkitAnimation = 'none';
+                document.getElementById("rocketdear").style.webkitAnimation = 'none';
+				document.getElementById("bubble").style.webkitAnimation = 'none';
+                document.getElementById("smokedear").className = "smokestill";
+                document.getElementById("launchsmokedear").className = "launchsmokestill";
+                document.getElementById("rocketdear").className = "rocketstill";
+                
+
+
+				document.getElementById("mainframe").style.backgroundImage = "url('illo/desert_rain.svg')";
+               	document.getElementById("bubbleHugecat").style.opacity="0";
+                document.getElementById("bubbleHugecatrays").style.opacity="0";
+                document.getElementById("bubble").className = "bubbleStill";
+                document.getElementById("bubble").style.opacity="0";
+nbDrop = 120;
+
+
+}
+
+
+
+
+
+// function to generate a random number range.
+function randRange( minNum, maxNum) {
+  return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+}
+
+
+
+// function to generate drops
+function createRain() {
+    for( i=0;i<=nbDrop;i++) {
+	var dropLeft = randRange(0,1280);
+	var dropTop = randRange(-500,590);
+
+	$('.rain').append('<div class="drop" id="drop'+i+'"></div>');
+	$('#drop'+i).css('left',dropLeft);
+	$('#drop'+i).css('top',dropTop);
+	}
+
+
+
+
+}
+createRain();
+ 
+     }  
+
+
+
+
+
+
+</script>
+</body>
+</html>
